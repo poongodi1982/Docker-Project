@@ -1,8 +1,8 @@
 pipeline {
 
   environment {
-    registry = "10.132.0.2:5000/mgsgoms/flask"
-    registry_mysql = "10.132.0.2:5000/mgsgoms/mysql"
+    registry = "10.128.0.9:5000/mgsgoms/flask"
+    registry_mysql = "10.128.0.9:5000/mgsgoms/mysql"
     dockerImage = ""
   }
 
@@ -11,7 +11,7 @@ pipeline {
   
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/mgsgoms/Docker-Project.git'
+        git 'https://github.com/poongodi1982/Docker-Project.git'
       }
     }
 
